@@ -1,0 +1,27 @@
+---
+import NavLink from "./NavLink.astro";
+---
+
+<nav class="relative container mx-auto p-6">
+  <!-- flex container -->
+  <div class="flex items-center justify-between">
+    <!-- logo -->
+    <div class="pt-2">
+      <img src="images/logo.svg" alt="logo" />
+    </div>
+    <!-- menu items -->
+    <div class="hidden md:flex space-x-7">
+      <NavLink link="Pricing" />
+      <NavLink link="Product" />
+      <NavLink link="About Us" />
+      <NavLink link="Careers" />
+      <NavLink link="Community" />
+    </div>
+    <!-- button -->
+    <a
+      href=""
+      class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+      >Get Started</a
+    >
+  </div>
+</nav>
