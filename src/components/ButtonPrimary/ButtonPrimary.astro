@@ -1,0 +1,17 @@
+---
+export interface Props {
+  text: string; // button text
+  href: string; // href
+  hidey: boolean; // if {true}, then button will be hidden on small devices
+}
+
+const { text, href, hidey } = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight",
+    { "hidden md:block": hidey, block: !hidey },
+  ]}>{text}</a
+>

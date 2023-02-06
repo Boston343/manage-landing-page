@@ -1,5 +1,6 @@
 ---
 import NavLink from "./NavLink.astro";
+import ButtonPrimary from "../ButtonPrimary/ButtonPrimary.astro";
 ---
 
 <nav class="relative container mx-auto p-6">
@@ -18,10 +19,6 @@ import NavLink from "./NavLink.astro";
       <NavLink link="Community" />
     </div>
     <!-- button -->
-    <a
-      href=""
-      class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
-      >Get Started</a
-    >
+    <ButtonPrimary text="Get Started" href="" hidey={true} />
   </div>
 </nav>
