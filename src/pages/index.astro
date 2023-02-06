@@ -1,81 +1,84 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Frontend Mentor | Manage landing page">
+  Pricing Product About Us Careers Community Get Started Bring everyone together
+  to build better products. Manage makes it simple for software teams to plan
+  day-to-day tasks while keeping the larger team goals in view. Get Started
+  What’s different about Manage? Manage provides all the functionality your team
+  needs, without the complexity. Our software is tailor-made for modern digital
+  product teams. 01 Track company-wide progress See how your day-to-day tasks
+  fit into the wider vision. Go from tracking progress at the milestone level
+  all the way done to the smallest of details. Never lose sight of the bigger
+  picture again. 02 Advanced built-in reports Set internal delivery estimates
+  and track progress toward company goals. Our customisable dashboard helps you
+  build out the reports you need to keep key stakeholders informed. 03
+  Everything you need in one place Stop jumping from one service to another to
+  communicate, store files, track tasks and share documents. Manage offers an
+  all-in-one team productivity solution. What they’ve said Anisha Li “Manage has
+  supercharged our team’s workflow. The ability to maintain visibility on larger
+  milestones at all times keeps everyone motivated.” Ali Bravo “We have been
+  able to cancel so many other subscriptions since using Manage. There is no
+  more cross-channel confusion and everyone is much more focused.” Richard Watts
+  “Manage allows us to provide structure and process. It keeps us organized and
+  focused. I can’t stop recommending them to everyone I talk to!” Shanai Gough
+  “Their software allows us to track, manage and collaborate on our projects
+  from anywhere. It keeps the whole team in-sync without being intrusive.” Get
+  Started Simplify how your team works today. Get Started Home Pricing Products
+  About Us Careers Community Privacy Policy Updates in your inbox… Go Copyright
+  2020. All Rights Reserved
+
+  <div class="attribution">
+    Challenge by <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend Mentor</a
+    >. Coded by <a href="https://github.com/Boston343">Reap3r</a>.
+  </div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>
