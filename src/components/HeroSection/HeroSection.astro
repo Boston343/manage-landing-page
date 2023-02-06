@@ -5,20 +5,22 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary.astro";
 <section id="hero">
   <!-- flex container -->
   <div
-    class="container flex flex-col-reverse pl-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+    class="container flex flex-col-reverse px-4 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
   >
     <!-- left item -->
-    <div class="flex flex-col my-8 md:my-16 space-y-12 md:w-1/2">
+    <div class="flex flex-col my-5 space-y-4 md:my-16 md:space-y-12 md:w-1/2">
       <h1
-        class="max-w-lg text-4xl text-darkBlue font-bold text-center md:text-5xl xl:text-6xl md:text-left"
+        class="max-w-lg text-4xl mx-auto leading-tight text-darkBlue font-bold text-center md:text-5xl md:leading-tight xl:text-6xl md:text-left"
       >
         Bring everyone together to build better products.
       </h1>
-      <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+      <p
+        class="max-w-sm text-center mx-auto md:mx-0 leading-loose text-darkGrayishBlue md:text-left"
+      >
         Manage makes it simple for software teams to plan day-to-day tasks while
         keeping the larger team goals in view.
       </p>
-      <div class="flex justify-center md:justify-start">
+      <div class="flex mb-10 justify-center md:justify-start">
         <ButtonPrimary text="Get Started" href="" hidey={false} />
       </div>
     </div>
