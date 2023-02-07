@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
+import ButtonPrimary from "../Buttons/ButtonPrimary";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -84,7 +84,7 @@ const Testimonials = () => {
           );
         })}
       </Swiper>
-      <div className="flex justify-center mt-10 md:mt-6">
+      <div className="flex justify-center mt-10 md:mt-4">
         <ButtonPrimary text="Get Started" href="" hidey={false} />
       </div>
     </section>

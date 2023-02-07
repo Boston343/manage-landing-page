@@ -1,11 +1,11 @@
 import React from "react";
 
-const ButtonPrimary = (props) => {
+const ButtonSecondary = (props) => {
   const { href, hidey, text } = props;
   const hideyClasses = hidey ? "hidden lg:block" : "block";
 
   const classes =
-    "p-3 px-8 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight " +
+    "p-3 px-8 text-brightRed bg-white font-bold rounded-full baseline hover:text-brightRedLight " +
     hideyClasses;
 
   return (
@@ -15,4 +15,4 @@ const ButtonPrimary = (props) => {
   );
 };
 
-export default ButtonPrimary;
+export default ButtonSecondary;

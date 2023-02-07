@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection/HeroSection.astro";
 import Features from "../components/Features/Features.astro";
 // import Testimonials from "../components/Testimonials/Testimonials.astro";
 import Testimonials from "../components/Testimonials/Testimonials.jsx";
+import CTA from "../components/CTA/CTA.jsx";
 ---
 
 <Layout title="Frontend Mentor | Manage landing page">
@@ -12,6 +13,7 @@ import Testimonials from "../components/Testimonials/Testimonials.jsx";
   <HeroSection />
   <Features />
   <Testimonials client:visible />
+  <CTA />
 
   <div class="attribution">
     Challenge by <a
