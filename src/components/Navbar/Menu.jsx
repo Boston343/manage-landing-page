@@ -4,7 +4,8 @@ import "./menu.css";
 const Menu = () => {
   function menuClick(event) {
     event.currentTarget.classList.toggle("open");
-    document.getElementById("menu").classList.toggle("hidden");
+    document.getElementById("menu").classList.toggle("opacity-0");
+    // document.getElementById("menu").classList.toggle("scale-50");
   }
 
   return (

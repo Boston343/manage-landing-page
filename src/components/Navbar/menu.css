@@ -6,7 +6,6 @@
   cursor: pointer;
   width: 24px;
   height: 24px;
-  transition: all 0.25s;
   position: relative;
 }
 
@@ -17,7 +16,7 @@
   top: 0;
   left: 0;
   width: 24px;
-  height: 2px;
+  height: 3.5px;
   background: black;
   transform: rotate(0);
   transition: all 0.5s;
@@ -37,13 +36,13 @@
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(4.5px) translate(4.5px) scaleX(1.25);
 }
 
 .open .hamburger-mid {
-  display: none;
+  opacity: 0;
 }
 
 .open .hamburger-bot {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(4.5px) translate(-4.5px) scaleX(1.25);
 }
