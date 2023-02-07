@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonPrimary from "../Buttons/ButtonPrimary";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,7 +39,7 @@ const testimonialItems = [
 //                  Testimonials
 const Testimonials = () => {
   return (
-    <section id="testimonials">
+    <>
       <div className="max-w-6xl px-5 mx-auto mt-16 mb-10 md:mt-36 md:mb-20 text-center">
         <h2 className="text-4xl font-bold text-center text-darkBlue">
           What they've said
@@ -84,10 +83,7 @@ const Testimonials = () => {
           );
         })}
       </Swiper>
-      <div className="flex justify-center mt-10 md:mt-4">
-        <ButtonPrimary text="Get Started" href="" hidey={false} />
-      </div>
-    </section>
+    </>
   );
 };
 

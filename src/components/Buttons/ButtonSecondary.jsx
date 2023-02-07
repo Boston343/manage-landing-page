@@ -5,7 +5,7 @@ const ButtonSecondary = (props) => {
   const hideyClasses = hidey ? "hidden lg:block" : "block";
 
   const classes =
-    "p-3 px-8 text-brightRed bg-white font-bold rounded-full baseline hover:text-brightRedLight " +
+    "p-4 px-8 text-brightRed bg-white font-bold rounded-full baseline hover:text-brightRedLight " +
     hideyClasses;
 
   return (

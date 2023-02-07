@@ -1,0 +1,15 @@
+---
+import "./styles.css";
+
+export interface Props {
+  name: string;
+  link: string;
+  img: string;
+}
+
+const { name, link, img } = Astro.props;
+---
+
+<a href={link} class="">
+  <img src={img} class="icon h-9 lg:h-7" alt={name} />
+</a>

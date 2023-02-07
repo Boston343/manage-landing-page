@@ -1,0 +1,80 @@
+---
+import FooterLogo from "./FooterLogo.astro";
+import EmailInput from "./EmailInput.jsx";
+
+const logos = [
+  {
+    name: "facebook",
+    link: "https://www.facebook.com",
+    img: "images/icon-facebook.svg",
+  },
+  {
+    name: "youtube",
+    link: "https://www.youtube.com",
+    img: "images/icon-youtube.svg",
+  },
+  {
+    name: "twitter",
+    link: "https://www.twitter.com",
+    img: "images/icon-twitter.svg",
+  },
+  {
+    name: "pinterest",
+    link: "https://www.pinterest.com",
+    img: "images/icon-pinterest.svg",
+  },
+  {
+    name: "instagram",
+    link: "https://www.instagram.com",
+    img: "images/icon-instagram.svg",
+  },
+];
+---
+
+<footer class="bg-veryDarkBlue">
+  <!-- flex container -->
+  <div
+    class="container flex flex-col-reverse justify-between px-6 py-6 mx-auto space-y-8 lg:flex-row lg:space-y-0 lg:py-16"
+  >
+    <!-- logo and social links container -->
+    <div
+      class="flex flex-col-reverse items-center justify-between space-y-12 lg:flex-col lg:space-y-0 lg:items-start"
+    >
+      <div
+        class="mx-auto my-6 mt-12 text-center text-darkGrayishBlue lg:hidden"
+      >
+        Copyright &copy; 2022, All Rights Reserved
+      </div>
+      <!-- logo -->
+      <div>
+        <img src="images/logo-white.svg" class="h-8" alt="logo" />
+      </div>
+      <!-- social links container -->
+      <div class="flex justify-center space-x-7 lg:space-x-4">
+        <!-- links -->
+        {logos.map((props) => <FooterLogo {...props} />)}
+      </div>
+    </div>
+    <!-- list container -->
+    <div class="flex space-x-20 mx-auto lg:justify-around lg:space-x-32">
+      <div class="flex flex-col space-y-3 text-white">
+        <a href="#" class="hover:text-brightRed">Home</a>
+        <a href="#" class="hover:text-brightRed">Pricing</a>
+        <a href="#" class="hover:text-brightRed">Products</a>
+        <a href="#" class="hover:text-brightRed">About Us</a>
+      </div>
+      <div class="flex flex-col space-y-3 text-white">
+        <a href="#" class="hover:text-brightRed">Careers</a>
+        <a href="#" class="hover:text-brightRed">Community</a>
+        <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+      </div>
+    </div>
+    <!-- input container -->
+    <div class="flex flex-col mx-auto lg:mx-0 justify-between">
+      <EmailInput client:visible />
+      <div class="hidden text-darkGrayishBlue ml-auto mr-0 lg:block">
+        Copyright &copy; 2022, All Rights Reserved
+      </div>
+    </div>
+  </div>
+</footer>
