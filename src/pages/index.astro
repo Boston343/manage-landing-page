@@ -3,12 +3,15 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar/Navbar.astro";
 import HeroSection from "../components/HeroSection/HeroSection.astro";
 import Features from "../components/Features/Features.astro";
+// import Testimonials from "../components/Testimonials/Testimonials.astro";
+import Testimonials from "../components/Testimonials/Testimonials.jsx";
 ---
 
 <Layout title="Frontend Mentor | Manage landing page">
   <Navbar />
   <HeroSection />
   <Features />
+  <Testimonials client:visible />
 
   <div class="attribution">
     Challenge by <a

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-theme-color: hsl(12, 88%, 59%);
+}
+
+.swiper-pagination-bullet {
+  outline: 1px solid var(--swiper-theme-color);
+  opacity: 100%;
+  background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--swiper-theme-color);
+}
+
+/* ====================================================== */
+/*            MEDIA QUERIES (LARGE DEVICES)               */
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullet {
+    visibility: hidden;
+  }
+}
