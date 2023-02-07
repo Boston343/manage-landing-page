@@ -1,0 +1,15 @@
+#cta {
+  background-image: url("/images/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+
+/* ====================================================== */
+/*            MEDIA QUERIES (MEDIUM DEVICES)              */
+@media screen and (min-width: 768px) {
+  #cta {
+    background-image: url("/images/bg-simplify-section-desktop.svg");
+    /* background-position-x: 50px; */
+    background-position: top -100px right -250px;
+  }
+}

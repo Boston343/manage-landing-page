@@ -20,30 +20,28 @@ const featureItems = [
 ];
 ---
 
-<section id="features">
-  <!-- flex container -->
-  <div
-    class="container flex flex-col px-4 mx-auto mt-16 space-y-12 md:space-y-0 md:flex-row"
-  >
-    <!-- what's different -->
-    <div class="flex flex-col mx-auto space-y-10 md:w-1/2">
-      <h2
-        class="text-3xl max-w-md text-darkBlue font-bold text-center md:text-left md:text-4xl"
-      >
-        What's different about Manage?
-      </h2>
-      <p
-        class="max-w-sm mx-auto md:mx-0 text-center leading-loose text-darkGrayishBlue md:text-left"
-      >
-        Manage provides all the functionality your team needs, without the
-        complexity. Our software is tailor-made for modern digital product
-        teams.
-      </p>
-    </div>
+<!-- flex container -->
+<section
+  id="features"
+  class="container flex flex-col px-4 mx-auto mt-16 space-y-12 md:space-y-0 md:flex-row"
+>
+  <!-- what's different -->
+  <div class="flex flex-col mx-auto space-y-10 md:w-1/2">
+    <h2
+      class="text-3xl max-w-md text-darkBlue font-bold text-center md:text-left md:text-4xl"
+    >
+      What's different about Manage?
+    </h2>
+    <p
+      class="max-w-sm mx-auto md:mx-0 text-center leading-loose text-darkGrayishBlue md:text-left"
+    >
+      Manage provides all the functionality your team needs, without the
+      complexity. Our software is tailor-made for modern digital product teams.
+    </p>
+  </div>
 
-    <!-- numbered list -->
-    <div class="flex flex-col space-y-12 md:w-1/2">
-      {featureItems.map((props) => <FeatureItem {...props} />)}
-    </div>
+  <!-- numbered list -->
+  <div class="flex flex-col space-y-12 md:w-1/2">
+    {featureItems.map((props) => <FeatureItem {...props} />)}
   </div>
 </section>

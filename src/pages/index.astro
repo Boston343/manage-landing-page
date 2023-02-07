@@ -23,3 +23,23 @@ import Footer from "../components/Footer/Footer.astro";
     >. Coded by <a href="https://github.com/Boston343">Web Reaper</a>.
   </div>
 </Layout>
+
+<style>
+  body {
+    background-image: url("/images/bg-tablet-pattern.svg"),
+      url("/images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 600px, 400px;
+    background-position: top -100px right -200px, top 550px right -250px;
+  }
+
+  /* ====================================================== */
+  /*            MEDIA QUERIES (MEDIUM DEVICES)              */
+  @media screen and (min-width: 768px) {
+    body {
+      background-size: 800px, 800px;
+      background-position: top -140px right -140px, top 1100px left -500px;
+      transform: rotate(0), rotate(180);
+    }
+  }
+</style>

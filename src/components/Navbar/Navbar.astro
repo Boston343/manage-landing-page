@@ -1,6 +1,7 @@
 ---
 import NavLink from "./NavLink.astro";
 import ButtonPrimary from "../Buttons/ButtonPrimary.jsx";
+import Menu from "./Menu.jsx";
 ---
 
 <nav class="relative container mx-auto pl-4 py-10 pr-10">
@@ -20,5 +21,21 @@ import ButtonPrimary from "../Buttons/ButtonPrimary.jsx";
     </div>
     <!-- button -->
     <ButtonPrimary text="Get Started" href="" hidey={true} />
+
+    <!-- hamburger icon -->
+    <Menu client:load />
+  </div>
+  <!-- mobile menu -->
+  <div class="lg:hidden">
+    <div
+      id="menu"
+      class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+    >
+      <NavLink link="Pricing" />
+      <NavLink link="Product" />
+      <NavLink link="About Us" />
+      <NavLink link="Careers" />
+      <NavLink link="Community" />
+    </div>
   </div>
 </nav>

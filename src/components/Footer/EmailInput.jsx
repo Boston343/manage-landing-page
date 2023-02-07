@@ -8,7 +8,7 @@ const EmailInput = () => {
         <input
           type="email"
           placeholder="Updates in your inbox..."
-          className="flex-1 pl-4 pr-8  py-4 rounded-full md:pr-16 focus:outline-none"
+          className="flex-1 pl-4 pr-8 py-4 rounded-full md:pr-16 focus:outline-none"
         />
         <ButtonPrimary href="#" text="GO" hidey={false} />
       </div>
