@@ -15,6 +15,9 @@ const EmailInput = () => {
     } else {
       document.getElementById("userMessage").innerHTML = "Email Sumbitted!";
       setEmail("");
+      setTimeout(() => {
+        document.getElementById("userMessage").innerHTML = "";
+      }, 3000);
     }
 
     // prevent form submission from reloading page
