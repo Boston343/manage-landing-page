@@ -62,8 +62,8 @@ Users should be able to:
 
 ## Author
 
-- Website - [Web Reaper](https://webreaper.dev/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Boston343)
+- Website - [webreaper.dev](https://webreaper.dev/)
+- Frontend Mentor - [@Boston343](https://www.frontendmentor.io/profile/Boston343)
 - Twitter - [@BowTiedWebReapr](https://twitter.com/BowTiedWebReapr)
 
 ## Acknowledgments
