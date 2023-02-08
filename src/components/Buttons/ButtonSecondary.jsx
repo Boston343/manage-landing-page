@@ -9,9 +9,9 @@ const ButtonSecondary = (props) => {
     hideyClasses;
 
   return (
-    <a href={href} className={classes}>
+    <button href={href} className={classes}>
       {text}
-    </a>
+    </button>
   );
 };
 

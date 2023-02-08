@@ -1,7 +1,7 @@
 import React from "react";
 
 const ButtonPrimary = (props) => {
-  const { href, hidey, text } = props;
+  const { href, hidey, text, type } = props;
   const hideyClasses = hidey ? "hidden lg:block" : "block";
 
   const classes =
@@ -9,9 +9,9 @@ const ButtonPrimary = (props) => {
     hideyClasses;
 
   return (
-    <a href={href} className={classes}>
+    <button href={href} className={classes} type={type}>
       {text}
-    </a>
+    </button>
   );
 };
 
