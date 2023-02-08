@@ -27,7 +27,20 @@ import ButtonPrimary from "../Buttons/ButtonPrimary.jsx";
 
     <!-- right item -->
     <div class="flex items-center md:w-1/2">
-      <img class="block" src="images/illustration-intro.svg" alt="hero image" />
+      <img
+        class="block hero-image"
+        src="images/illustration-intro.svg"
+        alt="hero image"
+      />
     </div>
   </div>
 </section>
+
+<style>
+  .hero-image {
+    /* limit content shift when loading */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 580/525;
+  }
+</style>

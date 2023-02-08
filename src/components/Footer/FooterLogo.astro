@@ -1,6 +1,4 @@
 ---
-import "./styles.css";
-
 export interface Props {
   name: string;
   link: string;
@@ -13,3 +11,18 @@ const { name, link, img } = Astro.props;
 <a href={link} class="">
   <img src={img} class="icon h-9 lg:h-7" alt={name} />
 </a>
+
+<style>
+  /* I used https://codepen.io/sosuke/pen/Pjoqqp to determine the filter */
+
+  .icon {
+    width: 100%;
+    height: "auto";
+  }
+
+  .icon:hover {
+    /* fill: #f25f3a; */
+    filter: brightness(0) saturate(100%) invert(54%) sepia(61%) saturate(3912%)
+      hue-rotate(342deg) brightness(94%) contrast(98%);
+  }
+</style>

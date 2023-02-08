@@ -70,10 +70,16 @@ const Testimonials = () => {
                 <div className="container p-4 flex flex-col self-stretch items-center space-y-6 rounded-lg bg-veryLightGray">
                   <img
                     src={image}
-                    className="w-20 -mt-16"
+                    className="w-20 -mt-16 testimonial-image"
                     alt="testimonial image"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      aspectRatio: "1",
+                      maxWidth: "80px",
+                    }}
                   />
-                  <h5 className="text-lg font-bold text-darkBlue">{name}</h5>
+                  <h3 className="text-lg font-bold text-darkBlue">{name}</h3>
                   <p className="text-sm leading-loose text-darkGrayishBlue">
                     {text}
                   </p>

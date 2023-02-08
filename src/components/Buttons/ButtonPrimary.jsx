@@ -9,7 +9,7 @@ const ButtonPrimary = (props) => {
     hideyClasses;
 
   return (
-    <button href={href} className={classes} type={type}>
+    <button href={href} className={classes} type={type} aria-label={text}>
       {text}
     </button>
   );

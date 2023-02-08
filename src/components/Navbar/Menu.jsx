@@ -5,13 +5,13 @@ const Menu = () => {
   function menuClick(event) {
     event.currentTarget.classList.toggle("open");
     document.getElementById("menu").classList.toggle("opacity-0");
-    // document.getElementById("menu").classList.toggle("scale-50");
   }
 
   return (
     <button
       id="menu-btn"
       onClick={menuClick}
+      aria-label="menu"
       className={"block hamburger lg:hidden focus:outline-none"}
     >
       <span className="hamburger-top"></span>

@@ -42,7 +42,7 @@ const EmailInput = () => {
           type="email"
           onInvalid={invalidForm}
           placeholder="Updates in your inbox..."
-          className="flex-1 pl-4 pr-8 py-4 rounded-full md:pr-16 border border-transparent focus:outline-none focus:border-brightRed"
+          className="flex-1 pl-4 pr-8 py-4 rounded-full border border-transparent md:pr-16 focus:outline-none focus:border-brightRed"
         />
         <ButtonPrimary href="#" text="GO" hidey={false} type="submit" />
       </div>

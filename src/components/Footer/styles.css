@@ -1,7 +1,0 @@
-/* I used https://codepen.io/sosuke/pen/Pjoqqp to determine the filter */
-
-.icon:hover {
-  /* fill: #f25f3a; */
-  filter: brightness(0) saturate(100%) invert(54%) sepia(61%) saturate(3912%)
-    hue-rotate(342deg) brightness(94%) contrast(98%);
-}
