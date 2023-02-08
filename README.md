@@ -31,12 +31,6 @@ Users should be able to:
 
 ![desktop image 1](./solution/1440p_1.png)
 
-![desktop image 2](./solution/1440p_2.png)
-
-![phone image 1](./solution/375p_1.png)
-
-![phone image 2](./solution/375p_2.png)
-
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/Boston343/manage-landing-page)

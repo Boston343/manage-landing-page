@@ -49,7 +49,7 @@ const EmailInput = () => {
       <em>
         <p
           id="userMessage"
-          className="text-brightRed text-sm font-light pl-3 pt-2"
+          className="text-brightRed min-h-[28px] text-sm font-light pl-3 pt-2"
         ></p>
       </em>
     </form>
