@@ -42,14 +42,14 @@ const EmailInput = () => {
           type="email"
           onInvalid={invalidForm}
           placeholder="Updates in your inbox..."
-          className="flex-1 pl-4 pr-8 py-4 rounded-full border border-transparent md:pr-16 focus:outline-none focus:border-brightRed"
+          className="flex-1 pl-3 pr-6 py-3 rounded-full text-sm border border-transparent md:pr-16 focus:outline-none focus:border-brightRed"
         />
-        <ButtonPrimary href="#" text="GO" hidey={false} type="submit" />
+        <ButtonPrimary href="#" text="Go" hidey={false} type="submit" />
       </div>
       <em>
         <p
           id="userMessage"
-          className="text-brightRed text-sm font-light pl-4 pt-2"
+          className="text-brightRed text-sm font-light pl-3 pt-2"
         ></p>
       </em>
     </form>

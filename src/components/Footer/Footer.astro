@@ -49,14 +49,13 @@ const logos = [
       <div>
         <img
           src="images/logo-white.svg"
-          class="h-8"
           alt="logo"
-          width="194.663px"
-          height="32px"
+          width="146px"
+          height="24px"
         />
       </div>
       <!-- social links container -->
-      <div class="flex justify-center space-x-7 lg:space-x-4">
+      <div class="flex justify-center space-x-7 lg:space-x-3">
         <!-- links -->
         {logos.map((props) => <FooterLogo {...props} />)}
       </div>
@@ -78,7 +77,7 @@ const logos = [
     <!-- input container -->
     <div class="flex flex-col mx-auto lg:mx-0 justify-between">
       <EmailInput client:visible />
-      <div class="hidden text-darkGrayishBlue ml-auto mr-0 lg:block">
+      <div class="hidden text-darkGrayishBlue text-sm ml-auto mr-0 lg:block">
         Copyright &copy; 2022, All Rights Reserved
       </div>
     </div>

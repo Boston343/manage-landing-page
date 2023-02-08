@@ -16,22 +16,22 @@ const testimonialItems = [
   {
     image: "images/avatar-anisha.png",
     name: "Anisha Li",
-    text: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
+    text: '"Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."',
   },
   {
     image: "images/avatar-ali.png",
     name: "Ali Bravo",
-    text: "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.",
+    text: '"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."',
   },
   {
     image: "images/avatar-richard.png",
     name: "Richard Watts",
-    text: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
+    text: '"Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!"',
   },
   {
     image: "images/avatar-shanai.png",
     name: "Shanai Gough",
-    text: "Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.",
+    text: '"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive."',
   },
 ];
 
@@ -67,7 +67,7 @@ const Testimonials = () => {
           return (
             <SwiperSlide key={index} className="container p-4 py-12">
               <div className="flex">
-                <div className="container p-4 flex flex-col self-stretch items-center space-y-6 rounded-lg bg-veryLightGray">
+                <div className="container pt-5 p-10 flex flex-col self-stretch items-center space-y-6 rounded-lg bg-veryLightGray">
                   <img
                     src={image}
                     className="w-20 -mt-16 testimonial-image"
@@ -80,7 +80,7 @@ const Testimonials = () => {
                     }}
                   />
                   <h3 className="text-lg font-bold text-darkBlue">{name}</h3>
-                  <p className="text-sm leading-loose text-darkGrayishBlue">
+                  <p className="text-sm text-center leading-loose text-darkGrayishBlue">
                     {text}
                   </p>
                 </div>
